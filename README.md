@@ -1,13 +1,17 @@
-# GitHub Codespaces ♥️ Next.js
+# DID Alias Generator
 
-Welcome to your shiny new Codespace running Next.js! We've got everything fired up and running for you to explore Next.js.
-
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
-
-To run this application:
-
+I'm trying to get a better understanding of DID's in Web5. I would like for my DIDs to be connected to a user-friendly alias rather than a long string of alphanumeric characters. TBD might have plans to enable this or this might not even be the most optimal solution, but this is something that will work for me going forward as I build other projects. I wan't to be able to keep track of my DIDs and have a fun aliases. Once I find a better solution, I will let folks know. 
+## Technologies used
+- Web5
+- Next.js
+- Ant Design
+## Things to improve
+- This doesn't have great styling. I'm just using Ant Design System. I need to add better designs in the future.
+- Validation could be improved
+- Need to add tests
+## Extras
+-  AI to help you generate a username if you can't think of one
+- ability to search for usernames maybe using fuse.js - a fuzzy search library
 ```
 npm run dev
 ```
