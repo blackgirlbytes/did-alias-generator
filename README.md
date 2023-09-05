@@ -5,6 +5,7 @@ I'm trying to get a better understanding of DID's in Web5. I would like for my D
 - Web5
 - Next.js
 - Ant Design
+- GitHub Pages
 ## Things to improve
 - This doesn't have great styling. I'm just using Ant Design System. I need to add better designs in the future.
 - Validation could be improved
