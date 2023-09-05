@@ -1,5 +1,5 @@
 # DID Alias Generator
-
+URL: https://blackgirlbytes.github.io/did-alias-generator/
 I'm trying to get a better understanding of DID's in Web5. I would like for my DIDs to be connected to a user-friendly alias rather than a long string of alphanumeric characters. TBD might have plans to enable this or this might not even be the most optimal solution, but this is something that will work for me going forward as I build other projects. I wan't to be able to keep track of my DIDs and have a fun aliases. Once I find a better solution, I will let folks know. 
 ## Technologies used
 - Web5
