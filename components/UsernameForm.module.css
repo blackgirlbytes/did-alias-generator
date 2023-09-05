@@ -1,0 +1,27 @@
+.description {
+  margin-bottom: 40px;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+}
+
+.formContainer {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+.submitButton {
+    margin-left: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.usernameForm {
+  display: inline-block;
+  text-align: left;
+}
