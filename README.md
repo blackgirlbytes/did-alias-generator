@@ -14,6 +14,4 @@ I'm trying to get a better understanding of DID's in Web5. I would like for my D
 ## Extras
 -  AI to help you generate a username if you can't think of one
 - ability to search for usernames maybe using fuse.js - a fuzzy search library
-```
-npm run dev
-```
+
