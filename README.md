@@ -7,7 +7,10 @@ I'm trying to get a better understanding of DID's in Web5. I would like for my D
 <img width="712" alt="Successful addition" src="https://github.com/blackgirlbytes/did-alias-generator/assets/22990146/13bbff49-42e1-44b0-b4b8-9fd4af688ff3">
 <img width="676" alt="Username already taken" src="https://github.com/blackgirlbytes/did-alias-generator/assets/22990146/2a5efdfd-6b68-4b64-8d27-6712fed6aad0">
 <img width="659" alt="Only alphanumeric characters, . and _ are allowed" src="https://github.com/blackgirlbytes/did-alias-generator/assets/22990146/c6204ca4-343d-4f6c-aef1-649bb7f9597d">
-
+## Things I need to add
+- This only creates a username on a user's DWN. I guess there need to be some sort centralization with a decentralized ecosystem to have all the usernames aggregated into one spot
+- Maybe it can link to social media platforms
+- Maybe I can add verifiable credentials
 
 ## Technologies used
 - Web5
