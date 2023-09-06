@@ -84,47 +84,55 @@ const UsernameForm = () => {
 
     return (
         <div className={styles.formContainer}>
-            <Title level={2} className={styles.title}>Create a Username</Title>
-            <Text className={styles.description}>Choose a unique username to associate with your DID.</Text>
-            <Form
-                name="basic"
-                labelCol={{ span: 8 }}
-                wrapperCol={{ span: 16 }}
-                style={{ maxWidth: 600 }}
-                initialValues={{ remember: true }}
-                onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
-                autoComplete="off"
-                className={styles.usernameForm}
-            >
-                <div className={styles.flexContainer}>
-                    <Form.Item
-                        label="Username"
-                        name="username"
-                        rules={[
-                            {
-                                required: true,
-                                message: 'Please input your username!',
-                            },
-                            {
-                                pattern: /^[a-zA-Z0-9._]+$/,
-                                message: 'Only alphanumeric characters, . and _ are allowed',
-                            }
-                        ]}
-                        validateStatus={validateStatus === 'error' ? 'error' : undefined}
-                        help={validateStatus === 'error' ? helpText : undefined}
-                    >
-                        <Input />
-                    </Form.Item>
-                    <Button htmlType="submit" className={styles.submitButton}>
-                        Submit
-                    </Button>
+            <div className={styles.window}>
+                <div className={styles.titleBar}>
+                    <div className={styles.titleBarButton}></div>
+                    <div className={styles.titleBarButton}></div>
+                    <div className={styles.titleBarButton}></div>
                 </div>
+                <div className={styles.windowContent}>
+                    <Title level={2} className={styles.title}>Create a Username</Title>
+                    <Text className={styles.description}>Choose a unique username to associate with your DID.</Text>
+                    <Form
+                        name="basic"
+                        labelCol={{ span: 8 }}
+                        wrapperCol={{ span: 16 }}
+                        style={{ maxWidth: 600 }}
+                        initialValues={{ remember: true }}
+                        onFinish={onFinish}
+                        autoComplete="off"
+                        className={styles.usernameForm}
+                    >
+                        <div className={styles.flexContainer}>
+                            <Form.Item
+                                label="Username"
+                                name="username"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: 'Please input your username!',
+                                    },
+                                    {
+                                        pattern: /^[a-zA-Z0-9._]+$/,
+                                        message: 'Only alphanumeric characters, . and _ are allowed',
+                                    }
+                                ]}
+                                validateStatus={validateStatus === 'error' ? 'error' : undefined}
+                                help={validateStatus === 'error' ? helpText : undefined}
+                            >
+                                <Input />
+                            </Form.Item>
+                            <Button htmlType="submit" className={styles.submitButton}>
+                                Submit
+                            </Button>
+                        </div>
 
-                {validateStatus === 'success' && (
-                    <Alert message="Username successfully created!" type="success" showIcon />
-                )}
-            </Form>
+                        {validateStatus === 'success' && (
+                            <Alert message="Username successfully created!" type="success" showIcon />
+                        )}
+                    </Form>
+                </div>
+            </div>
         </div>
     );
 };
